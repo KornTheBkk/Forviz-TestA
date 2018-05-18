@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test A</title>
+</head>
+
+<body>
+    
+    <div class="cup"></div>
+
+    <style type="text/css">
+        div.cup {
+            margin: 50px auto;
+            width: 300px;
+            height: 270px;
+            background-color: #000;
+            position: relative;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        div.cup::before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 140px;
+            height: 140px;
+            right: -110px;
+            border-radius: 50%;
+            border: 35px solid black;
+        }
+
+        div.cup::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 500px;
+            height: 45px;
+            bottom: -55px;
+            left: -100px;
+            background-color: black;
+            border-bottom-left-radius: 45px;
+            border-bottom-right-radius: 45px;
+        }
+    </style>
+    
+</body>
+
+</html>
